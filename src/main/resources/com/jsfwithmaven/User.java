@@ -34,9 +34,6 @@ public class User {
     public User() {
         // Imposta il valore di nome2 a "Alessandro" nel costruttore
         this.nome2 = "Alessandro";
-    }
-
-    public User(String nome) {
         this.nome = nome;
     }
 
