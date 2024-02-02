@@ -25,9 +25,11 @@
             
             <br/>
             
-            <h:outputText id="outputData" value="#{user.dataDiNascita}" />
+            <h:outputText id="outputData" value="#{user.dataDiNascita}" /> <br/>
 
-
+            <p:button value="#{user.doSomething()}" />  <br/>
+            
+            <h:outputText value="#{anotherBean.numero}"/>
         </h:form>
     </h:body>
 </html>
