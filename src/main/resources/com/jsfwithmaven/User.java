@@ -5,6 +5,7 @@
  */
 package com.jsfwithmaven;
 
+import java.util.Date;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
@@ -14,6 +15,18 @@ public class User {
 
     private String nome;
     private String nome2;
+    private Date dataDiNascita;
+
+    public User() {
+    }
+
+    public Date getDataDiNascita() {
+        return dataDiNascita;
+    }
+
+    public void setDataDiNascita(Date dataDiNascita) {
+        this.dataDiNascita = dataDiNascita;
+    }
 
     public String getNome2() {
         return nome2;
@@ -28,12 +41,6 @@ public class User {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public User() {
-        // Imposta il valore di nome2 a "Alessandro" nel costruttore
-        this.nome2 = "Alessandro";
         this.nome = nome;
     }
 
